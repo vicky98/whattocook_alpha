@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/sign_up2">
+
+    <!--logo-->
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:id="@+id/Logo"
+        android:src="@drawable/logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22" />
+
+    <!--username-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Username"
+        android:id="@+id/Username_signUp"
+        android:textColor="#ede1e1"/>
+    <!--android:background="#cdff91"-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Username" />
+
+    <!--email-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail"
+        android:id="@+id/email"
+        android:textColor="#ede1e1"/>
+    <!--android:background="#cdff91"-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_signUp"
+        android:layout_gravity="center_horizontal" />
+
+    <!--password-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/pass_signUp"
+        android:textColor="#ede1e1"/>
+    <!--android:background="#cdff91"-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass" />
+
+    <!--reenter password-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reenter password"
+        android:id="@+id/reenter_pass_signUp"
+        android:textColor="#ede1e1"/>
+    <!--android:background="#cdff91"-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/reenter_pas" />
+
+    <!--signUp Button-->
+    <Button
+        android:id="@+id/signup_signup_button"
+        android:background="@drawable/buttonshape"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textStyle="normal|italic"
+        android:visibility="visible"
+        android:clickable="true"
+        android:textColor="#F7F7F7"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

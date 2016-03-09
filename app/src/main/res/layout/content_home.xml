@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/head_page_background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <ImageView
+        android:layout_width="324dp"
+        android:layout_height="259dp"
+        android:id="@+id/Logo"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="118dp"></TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="35px"
+                android:layout_height="20px"
+                android:layout_column="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogIn"
+                android:id="@+id/home_login_button"
+                android:background="@drawable/buttonshape"
+                android:clickable="true"
+                android:textColor="#F7F7F7"
+                android:textStyle="normal|italic"
+                android:layout_column="2"
+                android:layout_gravity="right" />
+
+            <Space
+                android:layout_width="225px"
+                android:layout_height="20px"
+                android:layout_column="4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:id="@+id/home_signup_button"
+                android:clickable="true"
+                android:background="@drawable/buttonshape"
+                android:textColor="#F7F7F7"
+                android:textStyle="normal|italic"
+                android:layout_column="7" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
