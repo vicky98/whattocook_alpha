@@ -27,12 +27,27 @@ public class Login extends AppCompatActivity
                     Action_Forward(view);
             }
         });
+
+        Button forgottenPassword = (Button) findViewById(R.id.login_forgotten_password);
+        forgottenPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Action_LoginToForgottenPassword(view);
+            }
+        });
     }
 
     //@Override
     public void Action_Forward (View view)
     {
         Intent intent = new Intent(getApplicationContext(), RecipeOfTheDay.class);
+        startActivity(intent);
+    }
+
+    public void Action_LoginToForgottenPassword (View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), ForgottenPassword.class);
         startActivity(intent);
     }
 }

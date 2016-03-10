@@ -14,6 +14,10 @@
         android:type="linear"
         />
 
+    <!--        android:startColor="#93c5ff"
+        android:centerColor="#0077ff"
+        android:endColor="#00234b"-->
+
     <padding
         android:left="0dp"
         android:top="0dp"

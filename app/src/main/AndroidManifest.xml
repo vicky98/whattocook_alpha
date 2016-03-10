@@ -35,46 +35,45 @@
             -->
 
         </activity>
-
         <activity
             android:name=".Signup"
             android:label="@string/title_activity_signup"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".RecipeOfTheDay"
             android:label="@string/title_activity_recipe_of_the_day"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Recipe"
             android:label="@string/title_activity_recipe"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".AskRecipeOrIdea"
             android:label="@string/title_activity_ask_recipe_or_idea"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Search"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".RandomRecipe"
             android:label="@string/title_activity_random_recipe"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <!--<activity
+        <!--
+            <activity
             android:name=".ListOfRecipes"
             android:label="@string/title_activity_list_of_recipes"
-            android:theme="@style/AppTheme.NoActionBar"></activity>-->
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity
+            android:name=".ForgottenPassword"
+            android:label="@string/title_activity_forgotten_password"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
