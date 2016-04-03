@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Username"
+        android:text="Потребителско име"
         android:id="@+id/Username_signUp"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Password"
+        android:text="Парола"
         android:id="@+id/pass_signUp"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Reenter password"
+        android:text="Въведете паролата отново"
         android:id="@+id/reenter_pass_signUp"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
