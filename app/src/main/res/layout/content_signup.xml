@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Потребителско име"
-        android:id="@+id/Username_signUp"
+        android:id="@+id/username"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/etUsername" />
+        android:id="@+id/username_signUp" />
 
     <!--email-->
     <TextView
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Парола"
-        android:id="@+id/pass_signUp"
+        android:id="@+id/pass"
         android:textColor="#ede1e1"/>
     <!--android:background="#cdff91"-->
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/pass" />
+        android:id="@+id/pass_signUp" />
 
     <!--reenter password-->
     <TextView
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/reenter_pas" />
+        android:id="@+id/reenter_pass" />
 
     <!--signUp Button-->
     <Button
