@@ -23,21 +23,19 @@ public class Signup extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final Button signup = (Button) findViewById(R.id.signup_signup_button);
+        final Button signUp = (Button) findViewById(R.id.signup_signup_button);
         final EditText etEmail = (EditText) findViewById(R.id.email_signUp);
         final EditText etUsername = (EditText) findViewById(R.id.username_signUp);
         final EditText etPassword = (EditText) findViewById(R.id.pass_signUp);
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Action_SignupToHome(view);
-
                 final String username = etUsername.getText().toString();
                 final String email = etEmail.getText().toString();
                 final String password = etPassword.getText().toString();
 
-                    Response.Listener<String> responseListener = new Response.Listener<String>() {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try {
@@ -57,13 +55,20 @@ public class Signup extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
-                    };
+                };
 
-                    RegisterRequest registerRequest = new RegisterRequest(username, email, password, responseListener);
-                    RequestQueue queue = Volley.newRequestQueue(Signup.this);
-                    queue.add(registerRequest);
+                RegisterRequest registerRequest = new RegisterRequest(username, email, password, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(Signup.this);
+                queue.add(registerRequest);
+
+                Action_SignupToHome(view);
                 }
         });
+    }
+
+    public void Action_SignupToHome(View view) {
+        Intent intent = new Intent(getApplication(), Home.class);
+        startActivity(intent);
     }
 }
 
