@@ -10,7 +10,7 @@
     tools:context="project.tp.whattocook.RecipesList">
 
     <ListView
-        android:id="@+id/recipe_list_view"
+        android:id="@+id/recipes_listView"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
     </ListView>

@@ -31,4 +31,13 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_random_recipes_to_add_recipes"
+        android:layout_marginTop="60dp"
+        android:text="ДОБАВИ РЕЦЕПТА"
+
+        />
+
 </android.support.design.widget.CoordinatorLayout>
