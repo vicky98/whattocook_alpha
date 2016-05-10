@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_title_add_recipes"
+        android:layout_below="@+id/add_recipes_title_recipe"
         android:id="@+id/text_time_add_recipes"
         android:text="ВРЕМЕ ЗА ПРИГОТВЯНЕ"
     />
@@ -37,6 +37,52 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_time_add_recipes"
         android:id="@+id/add_recipes_time"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_recipes_time"
+        android:id="@+id/text_ingredients_add_recipes"
+        android:text="СЪСТАВКИ"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ingredients_add_recipes"
+        android:id="@+id/add_recipes_ingredients"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_recipes_ingredients"
+        android:id="@+id/text_preparation_add_recipes"
+        android:text="НАЧИН НА ПРИГОТВЯНЕ"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_preparation_add_recipes"
+        android:id="@+id/add_recipes_preparation"
+    />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="СНИМКА"
+        android:id="@+id/button_add_recipes_photo"
+        android:background="@drawable/buttonshape"
+        android:clickable="true"
+        android:textColor="#F7F7F7"
+        android:textStyle="normal|italic"
+        android:layout_column="2"
+        android:layout_gravity="right"
+        android:textAlignment="center"
+        android:layout_below="@id/add_recipes_preparation"
     />
 
 </RelativeLayout>
